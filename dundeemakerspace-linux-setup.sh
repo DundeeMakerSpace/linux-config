@@ -110,9 +110,9 @@
   #
   # Interwebs
   #
-  apt-get install -y google-chrome
+  apt-get install -y google-chrome-stable
 
-  apt-get upgrade
+  apt-get upgrade -y
 # }
 
 # Node packages {
