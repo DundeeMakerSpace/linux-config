@@ -28,7 +28,7 @@
   #
   # Basic support for compiling stuff
   #
-  apt-get install -y build-essential
+  apt-get install -y build-essential curl
 
   #
   # Missing scripting languages/environments
@@ -82,7 +82,7 @@
   #
   # Networking client/diagnostic tools
   #
-  apt-get install -y curl atftp elinks iptables netcat6 nslookup pure-ftpd tcpdump telnet-bsd whois wireshark
+  apt-get install -y atftp elinks iptables netcat6 nslookup pure-ftpd tcpdump telnet-bsd whois wireshark
 
   #
   # Networking server tools
