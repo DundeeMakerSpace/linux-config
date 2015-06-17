@@ -5,18 +5,18 @@
   #
   # chrome
   # 
-  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-  sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+  wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+  sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
 
   # 
   # node v0.12
   # 
-  curl -sL https://deb.nodesource.com/setup_0.12 | sudo bash -
+  wget -q -O - https://deb.nodesource.com/setup_0.12 | bash -
 
   # 
   # Atom editor
   # 
-  sudo add-apt-repository ppa:webupd8team/atom
+  add-apt-repository ppa:webupd8team/atom
 
 # }
 
@@ -40,7 +40,7 @@
   #
   apt-get install -y php-pear pip rubygems
   curl -sS https://getcomposer.org/installer | php
-  sudo mv composer.phar /usr/local/bin/composer
+  mv composer.phar /usr/local/bin/composer
 
   #
   # Source control tools
