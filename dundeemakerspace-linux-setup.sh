@@ -126,3 +126,9 @@
   apm install emmet
 
 # }
+
+# Desktop shortcuts {
+
+  cp desktopIcons/* ~/Desktop
+
+}

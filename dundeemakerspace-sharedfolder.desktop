@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=DM Shared Folder
+GenericName=Shared Folder
+Comment=Open the shared folder on the Dundee Makerspace File Server
+Icon=network-workgroup
+Exec=pcmanfm smb://192.168.0.2/storage
