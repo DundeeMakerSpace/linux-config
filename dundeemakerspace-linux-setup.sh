@@ -129,6 +129,6 @@
 
 # Desktop shortcuts {
 
-  cp desktopIcons/* ~/Desktop
+  cp *.desktop ~/Desktop
 
 }
