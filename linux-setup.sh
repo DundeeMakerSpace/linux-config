@@ -26,10 +26,11 @@ mount /mnt/dmSharedStorage
 
 # }
 
+# Update package lists
+apt-get update
+
 # Mostly borrowed from https://github.com/jfhbrook/makerspace-linux/blob/master/chroot-commands.sh
 # Install packages {
-  
-  apt-get update
 
   #
   # Basic support for compiling stuff
@@ -118,8 +119,10 @@ mount /mnt/dmSharedStorage
   #
   apt-get install -y google-chrome-stable
 
-  apt-get upgrade -y
 # }
+
+# Upgrade all out of date packages
+apt-get upgrade
 
 # Node packages {
 
