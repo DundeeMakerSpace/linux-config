@@ -8,7 +8,7 @@ apt-get install -y cifs-utils
 mkdir /mnt/dmsPublicFiles
 echo "# Dundee Makerspace public samba share" > /etc/fstab
 echo "//dms-server.local/public /mnt/dmsPublicFiles cifs guest,rw 0 0" >> /etc/fstab
-mount /mnt/dmsPublicFiles
+mount -a
 
 # Set apt proxy by avahi hostname
 echo 'Acquire::http::proxy "http://dms-server.local:3142";' >> /etc/apt/apt.conf.d/00proxy
