@@ -7,7 +7,7 @@ apt-get install -y avahi-daemon avahi-discover libnss-mdns
 apt-get install -y cifs-utils
 mkdir /mnt/dmsPublicFiles
 echo "# Dundee Makerspace public samba share" > /etc/fstab
-echo "//dms-server.local/public /mnt/dmsPublicFiles cifs rw,username=guest 0 0" >> /etc/fstab
+echo "//dms-server.local/public /mnt/dmsPublicFiles cifs guest,rw 0 0" >> /etc/fstab
 mount /mnt/dmsPublicFiles
 
 # Set apt proxy by avahi hostname
