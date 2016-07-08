@@ -44,7 +44,7 @@ apt-get update
   apt-get install -y build-essential
   
   # Source control tools
-  apt-get install -y bzr git mercurial svn
+  apt-get install -y bzr git mercurial subversion
   
   # Web browser
   apt-get install -y google-chrome-stable
