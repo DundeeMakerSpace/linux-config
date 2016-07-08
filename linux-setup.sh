@@ -73,7 +73,7 @@ apt-get update
   apt-get install -y gimp inkscape
 
   # CAD software
-  apt-get install -y blender freecad openscad wings3d
+  apt-get install -y blender freecad openscad
 
   # STL analysis/repair/etc tools
   apt-get install -y assimp-utils admesh meshlab
@@ -90,17 +90,17 @@ apt-get update
   apt-get install -y vim okteta atom
 
   # Networking client/diagnostic tools
-  apt-get install -y atftp elinks iptables netcat6 nslookup lftp pure-ftpd tcpdump telnet-bsd whois wireshark
+  apt-get install -y atftp elinks iptables netcat6 lftp pure-ftpd tcpdump whois wireshark
 
   # Networking server tools
   # TODO: How do these behave on a livecd??
   # TODO: samba xinetd mysql??
   # TODO: ecstatic? (npm view ecstatic)
-  apt-get install -y apache2 libapache2-mod-perl2 libapache2-mod-php5 sshd puppet
+  apt-get install -y apache2 libapache2-mod-perl2 libapache2-mod-php5 openssh-server puppet
 
   # Hardware tools
   # TODO: ntpasswd
-  apt-get install -y ddrescue gparted 
+  apt-get install -y gparted 
 
   # Audio/Video
   apt-get install -y audacity avidemux openshot qtractor sox vlc
@@ -135,12 +135,6 @@ apt-get autoremove -y
 # Node packages {
 
   npm install -g bower gulp grunt-cli
-
-# }
-
-# Atom packages {
-
-  apm install emmet
 
 # }
 
