@@ -1,10 +1,13 @@
 #! /bin/bash
 
+# Avahi
+apt-get install avahi-daemon avahi-discover libnss-mdns
+
 # Dundee Makerspace shared file server
-mkdir /mnt/dmSharedStorage
-echo "# Dundee Makerspace SMB share" >> /etc/fstab
-echo "//192.168.0.2/storage /mnt/dmSharedStorage cifs rw,username=guest 0 0" >> /etc/fstab
-mount /mnt/dmSharedStorage
+mkdir /mnt/dmsPublicFiles
+echo "# Dundee Makerspace public samba share" >> /etc/fstab
+echo "//dms-server.local/public /mnt/dmsPublicFiles cifs rw,username=guest 0 0" >> /etc/fstab
+mount /mnt/dmsPublicFiles
 
 # Add PPAs { 
   
