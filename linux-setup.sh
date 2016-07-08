@@ -11,7 +11,7 @@ echo "//dms-server.local/public /mnt/dmsPublicFiles cifs guest,rw 0 0" >> /etc/f
 mount -a
 
 # Set apt proxy by avahi hostname
-echo 'Acquire::http::proxy "http://dms-server.local:3142";' >> /etc/apt/apt.conf.d/00proxy
+echo 'Acquire::http::proxy "http://dms-server.local:3142";' > /etc/apt/apt.conf.d/00proxy
 echo 'Acquire::https::proxy "DIRECT";' >> /etc/apt/apt.conf.d/00proxy
 
 # curl
