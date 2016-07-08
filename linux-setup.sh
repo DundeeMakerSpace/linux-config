@@ -5,7 +5,7 @@ apt-get install -y avahi-daemon avahi-discover libnss-mdns
 
 # Dundee Makerspace shared file server
 mkdir /mnt/dmsPublicFiles
-echo "# Dundee Makerspace public samba share" >> /etc/fstab
+echo "# Dundee Makerspace public samba share" > /etc/fstab
 echo "//dms-server.local/public /mnt/dmsPublicFiles cifs rw,username=guest 0 0" >> /etc/fstab
 mount /mnt/dmsPublicFiles
 
