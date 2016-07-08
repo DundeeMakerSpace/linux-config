@@ -50,10 +50,10 @@ apt-get update
   apt-get install -y google-chrome-stable
 
   # Missing scripting languages/environments
-  apt-get install -y php5 nodejs
+  apt-get install -y php5 nodejs ruby
 
   # Missing package management tools
-  apt-get install -y php-pear pip rubygems
+  apt-get install -y php-pear python-pip
   # Composer funky install script because using normal package managers is too sensible for PHP developers...
   COMPOSER_EXPECTED_SIGNATURE=$(wget https://composer.github.io/installer.sig -O - -q)
   php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
