@@ -29,6 +29,11 @@ apt-get install -y curl
   DISTRO="$(lsb_release -s -c)"
   echo "deb https://deb.nodesource.com/$NODE_VERSION $DISTRO main" > /etc/apt/sources.list.d/nodesource.list
   echo "deb-src https://deb.nodesource.com/$NODE_VERSION $DISTRO main" >> /etc/apt/sources.list.d/nodesource.list
+  
+  # Oracle VirtualBox
+  curl --silent https://www.virtualbox.org/download/oracle_vbox_2016.asc | apt-key add -
+  curl --silent https://www.virtualbox.org/download/oracle_vbox.asc | apt-key add -
+  echo "deb http://download.virtualbox.org/virtualbox/debian $DISTRO contrib" > /etc/apt/sources.list.d/virtualbox.list
 
   # Atom editor from unofficial PPA
   add-apt-repository ppa:webupd8team/atom
@@ -97,6 +102,10 @@ apt-get update
   # TODO: samba xinetd mysql??
   # TODO: ecstatic? (npm view ecstatic)
   apt-get install -y apache2 libapache2-mod-perl2 libapache2-mod-php5 openssh-server puppet
+  
+  # Virtual machine hypervisor
+  apt-get install -y dkms virtualbox-5.0
+  # TODO: VBox guest extensions too
 
   # Hardware tools
   # TODO: ntpasswd
