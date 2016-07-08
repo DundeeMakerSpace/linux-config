@@ -20,7 +20,7 @@ apt-get install -y curl
   
   # Google Chrome
   curl --silent https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
-  echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.chrome.list
+  echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.chrome.list
 
   # node.js v0.12
   curl --silent https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
