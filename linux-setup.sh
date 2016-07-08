@@ -113,11 +113,11 @@ apt-get update
   
   # Epson Stylus SX215 printer
   # Using gdebi in non-interactive mode instead of dpkg because it will resolve dependencies from official packages
-  gdebi -n /mnt/dmSharedStorage/Shared/Epson\ Stylus\ SX210/Linux/epson-inkjet-printer-escpr_1.6.1-1lsb3.2_amd64.deb
-  gdebi -n /mnt/dmSharedStorage/Shared/Epson\ Stylus\ SX210/Linux/epson-printer-utility_1.0.0-1lsb3.2_amd64.deb
-  gdebi -n /mnt/dmSharedStorage/Shared/Epson\ Stylus\ SX210/Linux/iscan-bundle-1.0.0.x64.deb/data/iscan-data_1.36.0-1_all.deb
-  gdebi -n /mnt/dmSharedStorage/Shared/Epson\ Stylus\ SX210/Linux/iscan-bundle-1.0.0.x64.deb/core/iscan_2.30.1-1~usb0.1.ltdl7_amd64.deb
-  gdebi -n /mnt/dmSharedStorage/Shared/Epson\ Stylus\ SX210/Linux/iscan-bundle-1.0.0.x64.deb/plugins/iscan-network-nt_1.1.1-1_amd64.deb
+  gdebi -n /mnt/dmsPublicFiles/Shared/Epson\ Stylus\ SX210/Linux/epson-inkjet-printer-escpr_1.6.1-1lsb3.2_amd64.deb
+  gdebi -n /mnt/dmsPublicFiles/Shared/Epson\ Stylus\ SX210/Linux/epson-printer-utility_1.0.0-1lsb3.2_amd64.deb
+  gdebi -n /mnt/dmsPublicFiles/Shared/Epson\ Stylus\ SX210/Linux/iscan-bundle-1.0.0.x64.deb/data/iscan-data_1.36.0-1_all.deb
+  gdebi -n /mnt/dmsPublicFiles/Shared/Epson\ Stylus\ SX210/Linux/iscan-bundle-1.0.0.x64.deb/core/iscan_2.30.1-1~usb0.1.ltdl7_amd64.deb
+  gdebi -n /mnt/dmsPublicFiles/Shared/Epson\ Stylus\ SX210/Linux/iscan-bundle-1.0.0.x64.deb/plugins/iscan-network-nt_1.1.1-1_amd64.deb
   apt-get install -y sane sane-utils libsane-extras xsane
   # TODO: Install the printer itself instead of just the drivers
   
