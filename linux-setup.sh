@@ -37,9 +37,6 @@ apt-get install -y curl
 # Update package lists
 apt-get update
 
-# Upgrade all out of date packages
-apt-get upgrade -y
-
 # Mostly borrowed from https://github.com/jfhbrook/makerspace-linux/blob/master/chroot-commands.sh
 # Install packages {
 
@@ -127,6 +124,12 @@ apt-get upgrade -y
   # TODO: HP Photosmart 5510 over the network
 
 # }
+
+# Upgrade all out of date packages
+apt-get upgrade -y
+
+# Clean up old packages
+apt-get autoremove
 
 # Node packages {
 
