@@ -9,6 +9,10 @@ echo "# Dundee Makerspace public samba share" >> /etc/fstab
 echo "//dms-server.local/public /mnt/dmsPublicFiles cifs rw,username=guest 0 0" >> /etc/fstab
 mount /mnt/dmsPublicFiles
 
+# Set apt proxy by avahi hostname
+echo 'Acquire::http::proxy "http://dms-server.local:3142";' >> /etc/apt/apt.conf.d/00proxy
+echo 'Acquire::https::proxy "DIRECT";' >> /etc/apt/apt.conf.d/00proxy
+
 # Add PPAs { 
   
   #
