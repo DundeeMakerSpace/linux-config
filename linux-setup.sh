@@ -129,7 +129,7 @@ apt-get update
 apt-get upgrade -y
 
 # Clean up old packages
-apt-get autoremove
+apt-get autoremove -y
 
 # Node packages {
 
