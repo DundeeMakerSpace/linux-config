@@ -151,4 +151,4 @@ apt-get autoremove -y
 
   cp *.desktop ~/Desktop
 
-}
+# }
